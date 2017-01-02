@@ -9,7 +9,7 @@
 #Apache Jena Fuseki configuration file to enable Jena Rules based reasoner
 
 
-:service1  a                        fuseki:Service ;
+:service1        a                        fuseki:Service ;
         fuseki:dataset                    :dataset ;
         fuseki:name                       "ElQuijote-JenaRulesReasoner" ;
         fuseki:serviceQuery               "query" , "sparql" ;
@@ -18,7 +18,7 @@
         fuseki:serviceUpdate              "update" ;
         fuseki:serviceUpload              "upload" .
 
-:dataset   rdf:type ja:RDFDataset ;
+:dataset         rdf:type ja:RDFDataset ;
     rdfs:label "ElQuijote-JenaRulesReasoner" ;
     ja:defaultGraph
       [ rdfs:label "ElQuijote-JenaRulesReasoner" ;
