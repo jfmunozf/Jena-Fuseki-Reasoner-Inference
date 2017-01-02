@@ -24,3 +24,7 @@ An Apache Jena Fuseki 2.4.1 dataset configuration file to enable RDFS reasoner. 
 ElQuijote-OWLReasoner.ttl
 =========================
 An Apache Jena Fuseki 2.4.1 dataset configuration file to enable OWL reasoner. Requires: modelo.ttl and datos.ttl files.
+
+Brief tutorial and explanations
+===============================
+http://www.juanfelipe.info/node/181
