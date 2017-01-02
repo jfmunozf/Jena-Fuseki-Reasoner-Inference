@@ -5,8 +5,8 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix fuseki: <http://jena.apache.org/fuseki#> .
 
-#Archivo de configuracion de Apache Jena Fuseki para habilitar el razonamiento basado en OWL
-#Apache Jena Fuseki configuration file to enable OWL based reasoner
+#Archivo de configuracion de Apache Jena Fuseki 2.4.1 para habilitar el razonamiento basado en OWL
+#Apache Jena Fuseki 2.4.1 configuration file to enable OWL based reasoner
 
 
 :service1        a                        fuseki:Service ;
