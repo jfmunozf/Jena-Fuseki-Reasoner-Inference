@@ -36,4 +36,4 @@
         #Enable OWL based reasoner
         ja:reasoner [ja:reasonerURL <http://jena.hpl.hp.com/2003/OWLFBRuleReasoner>] ;
       ] ;
-.
+    .
