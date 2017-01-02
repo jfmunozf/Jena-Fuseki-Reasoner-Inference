@@ -1,0 +1,39 @@
+@prefix :      <http://base/#> .
+@prefix tdb:   <http://jena.hpl.hp.com/2008/tdb#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ja:    <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fuseki: <http://jena.apache.org/fuseki#> .
+
+#Archivo de configuracion de Apache Jena Fuseki para habilitar el razonamiento basado en RDFS
+#Apache Jena Fuseki configuration file to enable RDFS based reasoner
+
+
+:service1        a                        fuseki:Service ;
+        fuseki:dataset                    :dataset ;
+        fuseki:name                       "ElQuijote-RDFSReasoner" ;
+        fuseki:serviceQuery               "query" , "sparql" ;
+        fuseki:serviceReadGraphStore      "get" ;
+        fuseki:serviceReadWriteGraphStore "data" ;
+        fuseki:serviceUpdate              "update" ;
+        fuseki:serviceUpload              "upload" .
+
+:dataset         rdf:type ja:RDFDataset ;
+    rdfs:label "ElQuijote-RDFSReasoner" ;
+    ja:defaultGraph
+      [ rdfs:label "ElQuijote-RDFSReasoner" ;
+        a ja:InfModel ;
+
+        #La referencia a modelo.ttl
+        #Location of file modelo.ttl
+        ja:content [ja:externalContent <file:///C:/apache-jena-fuseki-2.4.1/run/databases/modelo.ttl> ] ;
+
+        #La referencia a datos.ttl
+        #Location of file datos.ttl
+        ja:content [ja:externalContent <file:///C:/apache-jena-fuseki-2.4.1/run/databases/datos.ttl> ] ;
+        
+        #Habilitamos el razonador RDFS
+        #Enable RDFS based reasoner
+        ja:reasoner [ja:reasonerURL <http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner>] ;
+      ] ;
+    .
