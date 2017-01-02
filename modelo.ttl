@@ -1,0 +1,14 @@
+@prefix ns: <http://www.example.org/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+ns:Persona      rdf:type        owl:Class .
+ns:Persona      owl:unionOf     (ns:Hombre ns:Mujer) .
+ns:Hombre       rdf:type        owl:Class .
+ns:Mujer        rdf:type        owl:Class .
+ns:conoceA      rdf:type        owl:SymmetricProperty .
+ns:conoceA      rdfs:domain     ns:Persona .
+ns:conoceA      rdfs:range      ns:Persona .
+ns:Caballo      rdf:type        owl:Class .
