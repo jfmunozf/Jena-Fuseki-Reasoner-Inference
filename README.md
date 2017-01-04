@@ -27,4 +27,5 @@ An Apache Jena Fuseki 2.4.1 dataset configuration file to enable OWL reasoner. R
 
 Brief tutorial and explanations
 ===============================
-http://www.juanfelipe.info/node/181
+[Español] http://www.juanfelipe.info/node/181
+[English] http://www.juanfelipe.info/node/182
