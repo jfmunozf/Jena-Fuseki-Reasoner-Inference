@@ -27,6 +27,4 @@ An Apache Jena Fuseki 2.4.1 dataset configuration file to enable OWL reasoner. R
 
 Brief tutorial and explanations
 ===============================
-* [Español] http://www.juanfelipe.info/node/181 
-* [English] http://www.juanfelipe.info/node/182 
 * [English] https://github.com/jfmunozf/Jena-Fuseki-Reasoner-Inference/wiki/Configuring-Apache-Jena-Fuseki-2.4.1-inference-and-reasoning-support-using-SPARQL-1.1:-Jena-inference-rules,-RDFS-Entailment-Regimes-and-OWL-reasoning 
